@@ -1,0 +1,44 @@
+
+html, body {
+	margin: 0;
+	padding: 0;
+	font-family: "Open Sans", sans-serif;
+}
+
+#buttons {
+	width: 60%;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border: 1px solid #000;
+}
+
+#normal {
+	height: 25px;
+	width: 150px;
+	margin: 0 auto;
+	border: 1px solid #000;
+	text-align: center;
+	transition: 0.3s;
+}
+
+#normal:hover {
+	background: rgba(0, 0, 0, 0.1);
+	transition: 0.2s;
+}
+
+#container {
+	position: relative;
+	margin: 0 auto;
+	text-align: center;
+	width: 800px;
+}
+
+.row, .column {
+	height: 50px;
+	width: 50px;
+	display: inline-block;
+	background: rgba(0, 0, 0, 0.3);
+	margin-left: 2px;
+	margin-right: 2px;
+}
