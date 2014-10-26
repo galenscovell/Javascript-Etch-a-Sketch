@@ -103,11 +103,11 @@ function gridCreation(size) {
 }
 
 function columnNumber() {
-	var rows = prompt("How many rows/columns? (1-20)");
+	var rows = prompt("How many rows/columns? (1-19)");
 
-	while (rows < 1 || rows > 20) {
+	while (rows < 1 || rows > 19) {
 		alert("Outside of range.");
-		rows = prompt("How many rows/columns? (1-20)");
+		rows = prompt("How many rows/columns? (1-19)");
 	}
 
 	gridCreation(rows);
