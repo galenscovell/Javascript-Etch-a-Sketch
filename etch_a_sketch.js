@@ -1,9 +1,10 @@
 
+// Ready document functions
 $(document).ready(function() {
 	var columns = 0;
 	var mode = '';
 
-
+    // Mode selection
 	$('.button').click(function () {
 		mode = $(this).attr('id');
 		switch (mode) {
@@ -23,9 +24,14 @@ $(document).ready(function() {
 				columnNumber();
 				normalMode();
 				break;
+            case 'toggle':
+                columnNumber();
+                toggleMode();
+                break;
 		}	
 	})
 });
+
 
 
 
@@ -38,15 +44,21 @@ function normalMode() {
 
 function colorMode() {
 	$('div.column').mouseenter(function() {
-		$(this).css('opacity', 0.0);
+		
+        var red = Math.floor(Math.random() * 256);
+        var green = Math.floor(Math.random() * 256);
+        var blue = Math.floor(Math.random() * 256);
+        
+        $(this).css('background', "rgb(" + red +", " + green +", " + blue +")");
+        $(this).css("opacity", 0.8);
 	});
 }
 
 function trailMode() {
 	$('div.column').mouseenter(function() {
-		$(this).fadeTo(10, 1);
+		$(this).fadeTo(0, 1);
 		$(this).mouseleave(function() {
-			$(this).fadeTo(300, 0.3);
+			$(this).fadeTo(600, 0.3);
 		});
 	});
 }
@@ -60,11 +72,25 @@ function gradualMode() {
 	});
 }
 
+function toggleMode() {
+    $('div.column').mouseenter(function() {
+        var current = $(this).css("opacity");
+        if (current == 1) {
+            $(this).css("opacity", 0.3);
+        }
+        else {
+            $(this).css("opacity", 1);
+        }
+    });
+}
+
+
 
 
 // Board creation functions
 function gridCreation(size) {
 
+    $("#container").text("");
 	$('.row').remove();
 
 	for(var i = 0; i < size; i++) {
@@ -77,11 +103,11 @@ function gridCreation(size) {
 }
 
 function columnNumber() {
-	var rows = prompt("How many rows/columns? (1-10)");
+	var rows = prompt("How many rows/columns? (1-20)");
 
-	while (rows < 1 || rows > 10) {
+	while (rows < 1 || rows > 20) {
 		alert("Outside of range.");
-		rows = prompt("How many rows/columns? (1-10)");
+		rows = prompt("How many rows/columns? (1-20)");
 	}
 
 	gridCreation(rows);
