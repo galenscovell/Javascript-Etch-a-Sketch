@@ -1,8 +1,8 @@
 
 html, body {
-	margin: 0;
-	padding: 0;
-	font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -12,40 +12,40 @@ html, body {
 }
 
 #buttons {
-	width: 100%;
-	text-align: center;
-	line-height: 30px;
-	top: 0px;
-	margin-bottom: 10px;
-	border-top: 3px solid rgba(0, 0, 0, 1.0);
-	background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    text-align: center;
+    line-height: 30px;
+    top: 0px;
+    margin-bottom: 10px;
+    border-top: 3px solid rgba(0, 0, 0, 1.0);
+    background: rgba(0, 0, 0, 0.7);
 }
 
 ul {
-	width: 100%;
-	list-style: none;
-	margin: 0 auto;
-	padding: 0;
+    width: 100%;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
 }
 
 li {
-	display: inline;
-	padding: 5px 20px;
-	text-decoration: none;
-	cursor: default;
-	transition: 0.3s;
+    display: inline;
+    padding: 5px 20px;
+    text-decoration: none;
+    cursor: default;
+    transition: 0.3s;
     color: #F3F3F3;
 }
 
 li:hover {
-	background: rgba(200, 200, 200, 0.3);
-	transition: 0.2s;
+    background: rgba(200, 200, 200, 0.3);
+    transition: 0.2s;
 }
 
 #container {
-	position: relative;
-	margin: 0 auto;
-	text-align: center;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
     width: 600px;
     padding: 10px;
     box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
@@ -53,12 +53,12 @@ li:hover {
 }
 
 .column {
-	height: 25px;
-	width: 25px;
-	display: inline-block;
-	background: rgba(0, 0, 0, 0.3);
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.3);
     box-shadow: 2px 2px rgba(0, 0, 0, 0.5);
-	margin-left: 2px;
-	margin-right: 2px;
-	opacity: 0.3;
+    margin-left: 2px;
+    margin-right: 2px;
+    opacity: 0.3;
 }
