@@ -6,23 +6,31 @@ html, body {
 }
 
 #buttons {
-	width: 60%;
-	margin: 0 auto;
-	margin-top: 20px;
+	width: 100%;
+	text-align: center;
+	line-height: 45px;
+	top: 0px;
 	margin-bottom: 20px;
-	border: 1px solid #000;
+	border-top: 3px solid rgba(0, 30, 164, 0.6);
+	background: rgba(0, 30, 164, 0.25);
 }
 
-#normal {
-	height: 25px;
-	width: 150px;
+ul {
+	width: 100%;
+	list-style: none;
 	margin: 0 auto;
-	border: 1px solid #000;
-	text-align: center;
+	padding: 0;
+}
+
+li {
+	display: inline;
+	padding: 12px 20px;
+	text-decoration: none;
+	cursor: default;
 	transition: 0.3s;
 }
 
-#normal:hover {
+li:hover {
 	background: rgba(0, 0, 0, 0.1);
 	transition: 0.2s;
 }
@@ -34,11 +42,12 @@ html, body {
 	width: 800px;
 }
 
-.row, .column {
+.column {
 	height: 50px;
 	width: 50px;
 	display: inline-block;
 	background: rgba(0, 0, 0, 0.3);
 	margin-left: 2px;
 	margin-right: 2px;
+	opacity: 0.3;
 }
