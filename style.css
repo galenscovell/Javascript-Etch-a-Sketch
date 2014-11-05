@@ -11,6 +11,22 @@ html, body {
     user-select: none;
 }
 
+p {
+    text-align: center;
+    margin-bottom: -10px;
+}
+
+a {
+    text-decoration: none;
+    color: gray;
+    transition: 0.5s;
+}
+
+a:hover {
+    color: blue;
+    transition: 0.5s;
+}
+
 #buttons {
     width: 100%;
     text-align: center;
